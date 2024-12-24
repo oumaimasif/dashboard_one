@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="styalesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://preline.co/assets/js/hs-apexcharts-helpers.js"></script>
+    <link rel="stylesheet" href="./node_modules/apexcharts/dist/apexcharts.css">
+
+</head>
+<body class="bg-white max-w-full  h-screen m-0">
+       <div class=""> 
+ 
+        <main class=" ">
+ <!-- sign in -->
+ <div class="  flex my-8 gap-5 justify-around ">
+ <div class=" m-auto w-1/4 ">
+ <h2 class="text-4xl font-sans font-bold m-4  text-center text-gray-700">Sign In</h2>
+ <p class="text-center  font-sans text-blue-gray-900 text-lg font-normal"> Enter your email and password to Sign In.</p>
+ <form action="agenda.html" method="POST" class= " mt-8 mb-2 mx-auto  space-y-6">
+     <div>
+         <label for="email" class="block text-sm font-medium text-gray-700">Your email </label>
+         <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="name@mail.com" />
+     </div>
+      <div>
+         <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+         <input type="password" id="password" name="password" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="********" />
+      
+           <div class="inline-block -ml-3 w-12 h-12 rounded-full hover:bg-slate-100 "> <input type="checkbox" class=" m-3.5 rounded-md w-5 h-5 inline-block align-middle border-blue-gray-200 cursor-pointer focus:ring-0 focus:outline-none checked:bg-gray-900 checked:border-gray-900 before:bg-gray-900"></div> 
+            <label><span class="text-zinc-600">I agree the</span> <a class="underline font-normal">Terms and Conditions</a></label>
+        </div>
+         <div >
+            <button type="submit" class="w-full uppercase py-2 px-4 bg-gray-900 text-white rounded-lg hover:bg-gray-900  hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                Sign In
+            </button>
+        </div>
+         <div class=" ">
+            <div class="text-sm">
+            <a href="#" class="text-blue-500 hover:text-blue-700">Forgot your password?</a>
+        </div>
+     </div>
+<!-- last to button ^ -->
+     <div class="space-y-7">
+        <button type="submit" class="w-full py-2.5 px-2 bg-white shadow-lg hover:shadow-xl text-gray-900 font-semibold rounded-lg capitalize  focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+           <img src="img/lgoogle.png" class="w-5 h-5  inline-block  align-middle"> Sign In with google
+        </button>
+        <button type="submit" class="w-full py-2.5 px-2 bg-white shadow-lg hover:shadow-xl text-gray-900 font-semibold rounded-lg capitalize  focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 inline align-middle " viewBox="0 0 512 512"><path fill="#1e1e20" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg> 
+            Sign In with google
+         </button>
+     </div>
+ </form>
+</div> 
+
+<!-- partie2 img-->
+    
+<div class="mr-5">    <img src="img/bgimg.png" class="  rounded-3xl h-full w-full  object-cover " alt="">
+</div>
+
+
+
+
+
+</div>
+ 
+ 
+ 
+ 
+
+ </main>
+ 
+
+ 
+</div>
+<!-- ------------ -->
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="./node_modules/lodash/lodash.min.js"></script>
+<script src="./node_modules/apexcharts/dist/apexcharts.min.js"></script>
+<script src="./node_modules/preline/dist/helper-apexcharts.js"></script>
+
+</body>
+
+</html>

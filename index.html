@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="styalesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://preline.co/assets/js/hs-apexcharts-helpers.js"></script>
+    <link rel="stylesheet" href="./node_modules/apexcharts/dist/apexcharts.css">
+
+</head>
+<body class="bg-zinc-100 max-w-full font-sans h-screen m-0 box-border">
+ 
+
+        <header class="  relative ">
+            <!-- navbar + barre de recherche et parametre  -->
+            <!-- navbar -->
+             <nav class=" w-72 fixed left-3 top-4 bottom-5 border border-gray-300  bg-white rounded-md ">
+                
+                 <div class="flex flex-col mt-5">
+                    <h1 class="  mb-14 self-center text-lg font-bold">Material Tailwind React</h1>
+                    <a href="index.html" class= "mx-3 px-4 py-4 rounded-xl bg-zinc-700 hover:bg-zinc-800 text-base text-white shadow-sm hover:shadow-lg active:bg-gray-800 active:text-white"><i class="fa-solid fa-house p-l" style="color: #607d8b; " ></i> Dashboard</a>
+                    <a href="profile.html" class= "mx-3 px-4 py-4 rounded-xl  hover:bg-zinc-800 text-base text-gray-500  font-semibold hover:text-white shadow-sm hover:shadow-lg "><i class="fa-regular fa-user" style="color: #607d8b;" ></i> Profile</a>
+                    <a href="tables.html" class= "mx-3 px-4 py-4 rounded-xl  hover:bg-zinc-800 text-base text-gray-500  font-semibold hover:text-white shadow-sm hover:shadow-lg "><i class="fa-solid fa-table" style="color: #607d8b;" ></i> Tables</a>
+                    <a href="agenda.html" class= "mx-3 px-4 py-4 rounded-xl  hover:bg-zinc-800 text-base text-gray-500  font-semibold hover:text-white shadow-sm hover:shadow-lg "><i class="fa-solid fa-calendar-days" style="color: #607d8b;" ></i> Agenda</a>
+                    <!-- ----------- -->
+                    <h1 class= "mx-3 mt-5 px-4 py-4  text-base text-gray-500  font-semibold ">Auth pages</h1>
+                    <a href="signin.html"class= "mx-3 px-4 py-4 rounded-xl  hover:bg-zinc-800 text-base text-gray-500  font-semibold hover:text-white shadow-sm hover:shadow-lg "> <i class="fa fa-sign-in ml-1" aria-hidden="true"></i> Sing In</a>
+                </div>
+             </nav>
+        </header>
+        <div class="ml-80 l h-full">
+    
+          <main class="">
+    
+
+         <!-- barre de recherche et parametre  -->
+           <div class="  flex items-center justify-between ">
+                   <!-- part1 -->
+                    <div>
+                     <a href="#" class=" text-gray-500 cursor-pointer hover:text-sky-700">Dashboard</a> / <a>Home</a>
+                     <br>
+                     <span class="text-base font-bold">Home</span>
+                    </div> 
+                    <!-- ----- bare de recherche ------ -->
+
+                    <div class="flex justify-center my-6 mx-3 items-center gap-4">
+                    <form class="max-w-md mx-auto">   
+
+
+                    <div class="relative top-0 ">
+                     <input type="text" id="name" autocomplete="off" required class="peer w-full px-4 py-2 text-base border-2 border-gray-300 rounded-full bg-transparent focus:outline-none focus:border-indigo-400"/>
+                    <label for="name" class="absolute left-2 top-2 px-2 text-gray-500 text-base transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:translate-y-[-50%] peer-placeholder-shown:scale-100 peer-focus:top-0 peer-focus:translate-y-[-50%] peer-focus:scale-90 bg-gray-100">
+                    Search </label>
+                     </div>
+                    </form>
+                     <button type="submit" class="hover:bg-slate-200 rounded-3xl p-2"> <a> <i class="fa-regular fa-user text-lg" style="color: #607d8b;" class="ml-1"></i> Sign in </a> </button>
+                    </div>
+            
+                </div>
+
+
+
+        <!--------- les cartes + icone -------->
+        <div class=" flex gap-11 justify-center items-center  ">
+        <!-- ctr1 -->
+        <div class="border-2 border-gray-300 bg-white rounded-lg w-1/5 h-40 ">
+            <div class="relative p-5" >
+                <!-- icon1 -->
+                <span class="bg-gray-800 p-3 rounded-xl absolute left-5 top-5 h-12 w-12" ><i class="fa-solid fa-money-bill  text-xl" style="color: #ffffff;"></i></span>
+                <h3 class="text-base text-gray-500 text-right ">Today Money</h3>
+                <p class=" text-gray-800 text-right  text-xl font-bold">1500 DH</p>
+            </div>
+          <hr class="w-full mt-3">
+            <p class="text-base  text-gray-500 p-4 text-center"><span class="text-green-500 text-base font-semibold ">+55%</span> the last week</p>
+        </div> 
+
+                <!-- ctr2 -->
+        <div class=" border-2  border-gray-300 bg-white rounded-lg w-1/5 h-40 ">
+            <div class="relative p-5" >
+                <!-- icon2 -->
+                <span class="bg-gray-800 p-3 rounded-xl absolute left-5 top-5 h-12 w-12" ><i class="fa-solid fa-user-group text-xl" style="color: #ffffff;"></i></span>
+                <h3 class="text-base text-gray-500 text-right ">Today Money</h3>
+                <p class=" text-gray-800 text-right  text-xl font-bold">1500 DH</p>
+            </div>
+          <hr class="w-full mt-3">
+            <p class="text-base  text-gray-500 p-4 text-center"><span class="text-green-500 text-base font-semibold ">+55%</span> the last week</p>
+        </div> 
+
+                <!-- ctr3 -->
+        <div class="border-2 border-gray-300 bg-white rounded-lg w-1/5 h-40 ">
+            <div class="relative p-5" >
+                <!-- icon3 -->
+                <span class="bg-gray-800 p-3 rounded-xl absolute left-5 top-5 h-12 w-12" ><i class="fa-solid fa-user-plus  text-xl" style="color: #ffffff;"></i></span>
+                <h3 class="text-base text-gray-500 text-right ">Today Money</h3>
+                <p class=" text-gray-800 text-right  text-xl font-bold">1500 DH</p>
+            </div>
+          <hr class="w-full mt-3">
+            <p class="text-base  text-gray-500 p-4 text-center"><span class="text-green-500 text-base font-semibold ">+55%</span> the last week</p>
+        </div> 
+
+           <!-- ctr4 -->
+        <div class="border-2 border-gray-300 bg-white rounded-lg w-1/5 h-40 ">
+            <div class="relative p-5" >
+                <!-- icon4 -->
+                <span class="bg-gray-800 p-3 rounded-xl absolute left-5 top-5 h-12 w-12" ><i class="fa-solid fa-money-bill  text-xl" style="color: #ffffff;"></i></span>
+                <h3 class="text-base text-gray-500 text-right ">Today Money</h3>
+                <p class=" text-gray-800 text-right  text-xl font-bold">1500 DH</p>
+            </div>
+          <hr class="w-full mt-3">
+            <p class="text-base  text-gray-500 p-4 text-center"><span class="text-green-500 text-base font-semibold ">+55%</span> the last week</p>
+        </div> 
+        </div>
+     
+    <!-- les 3 graphique  -->
+        <div class=" w-4/5 mx-auto flex my-5 justify-between items-center gap-16">
+          <div id="column-chart" class="w-full h-80 bg-white shadow-sm rounded-lg "></div>
+          <div id="data-series-chart" class="class w-full h-80 bg-white shadow-sm rounded-lg "></div>
+          <div id="data-series-chart2" class="class w-full h-80 bg-white shadow-sm rounded-lg "></div>
+        </div>
+
+<!-- -----------Projets---------- -->
+<div class="max-w-6xl mx-auto bg-white rounded-lg shadow-lg p-6">            <h1 class="text-2xl font-semibold py-6 text-gray-700">Project Dashboard</h1>
+          
+        <table class="  w-full text-left table-auto  bg-white">
+           <thead>
+            <tr class="text-gray-600 p-3 border-b">
+                <th>Project Name </th>
+                <th> Technologie</th>
+                <th>Budget</th>
+                <th>Status</th>
+            </tr>
+           </thead>
+           <!-- ----- -->
+            <TBODY>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="flex py-3 items-center gap-2">
+                        <span class="text-gray-700 font-medium">Mobile app Development</span> 
+                    </td>
+                    <td class=" py-3  gap-2">
+                        <img src="img/react.png" alt="React" class="w-6 h-6 inline  " />
+                        <img src="img/android.jpg" alt="Android" class="w-6 h-6 inline " />
+                    </td>
+                    <td class="py-3 text-gray-600" >4000 DH</td>
+                    <td class="py-3 text-orange-600">Pending</td>
+                </tr>
+                <!-- row2 -->
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 text-gray-700 font-medium">E-commerce Website</td>
+                    <td class="py-3 flex items-center gap-2">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="w-6 h-6" />
+                      <img src="img/python.jpg" alt="Python" class="w-6 h-6" />
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="w-6 h-6" />
+                    </td>
+                    <td class="py-3 text-gray-600">$10,000</td>
+                    <td class="py-3 text-green-500">In Progress</td>
+                  </tr>
+
+                  <!-- row3 -->
+                  <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 text-gray-700 font-medium">Personal Portfolio</td>
+                    <td class="py-3 flex items-center gap-2">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="w-6 h-6" />
+                    </td>
+                    <td class="py-3 text-gray-600">$5,000</td>
+                    <td class="py-3 text-green-500">Completed</td>
+                  </tr>
+
+                  <!-- row4 -->
+                  <tr class="border-b hover:bg-gray-50">
+                    <td class="py-3 text-gray-700 font-medium">Business Dashboard</td>
+                    <td class="py-3 flex items-center gap-2">
+                      <img src="img/python.jpg" alt="Python" class="w-6 h-6" />
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="w-6 h-6" />
+                    </td>
+                    <td class="py-3 text-gray-600">$15,000</td>
+                    <td class="py-3 text-red-500">Delayed</td>
+                  </tr>
+        
+      
+
+            </TBODY>
+        </table>
+
+    </div>
+
+    <!-- btn prametre fixe -->
+    <button type="button" data-dial-toggle="speed-dial-menu-default" aria-controls="speed-dial-menu-default" aria-expanded="false" class="flex items-center justify-center text-white bg-white shadow-lg rounded-full w-12 h-12 hover:bg-gray-50 hover:shadow-2xl focus:ring-4 fixed bottom-4 right-4 z-30">
+        <i class="fa-solid fa-gear text-xl" style="color: #000000;"></i>
+        <span class="sr-only">Open actions menu</span>
+    </button>
+    
+    </main>
+ 
+
+    <!-- footer -->
+ <footer class=" mt-16 ">
+    <div class=" flex justify-between items-center  ">
+        <p>&copy;2024, made with &#128151; by Creative Tim for a better web.</p>
+        <div class=" py-5 flex mx-4 gap-3 items-end ">
+            <a href="#" >Creative Tim</a>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">License</a>
+        </div>
+    </div>
+ </footer> 
+
+
+</div>
+<!-- ------------ -->
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="./node_modules/lodash/lodash.min.js"></script>
+<script src="./node_modules/apexcharts/dist/apexcharts.min.js"></script>
+<script src="./node_modules/preline/dist/helper-apexcharts.js"></script>
+
+</body>
+
+</html>
